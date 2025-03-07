@@ -99,8 +99,8 @@ pub struct ClientCredsFlow {
 
 #[derive(Debug)]
 pub struct NoVerifier;
-#[derive(Debug)]
 
+#[derive(Debug, Clone)]
 pub struct CsrfVerifier(pub(crate) CsrfToken);
 
 #[derive(Debug)]
